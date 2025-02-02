@@ -11,6 +11,6 @@ create table video (
     uploaded_at datetime,
     is_public tinyint,
     is_deleted tinyint,
-    deleted_at datetime,
+    deleted_at datetime null,
     foreign key (channel_id) references channel(id) on delete cascade
 );
